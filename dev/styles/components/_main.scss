@@ -1,0 +1,139 @@
+h2 {
+        font-size: 36px;
+        font-family: $bodyFont;
+        margin: 0;
+        line-height: 55px;
+        text-transform: uppercase;
+    }
+.threeBlocks {
+    // display:flex;
+    text-align: center;
+    font-family: $bodyFont;
+    padding-top:110px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    h3 {
+        font-size:14px;
+        margin:0;
+    }
+    p {
+        font-size: 12px;
+        line-height: 28px;
+        padding-top: 60px;
+    }
+}
+.team {
+    margin-bottom:110px;
+}
+.teamBlurb {
+    display: flex;
+    margin-top: 100px;
+    
+    p {
+        font-family:$cursive;
+        font-style: italic;
+        font-size: 18px;
+        line-height: 40px;
+        margin:0;
+        font-weight: 300;
+    }
+}
+.teamPhotos {
+    display:flex;
+    justify-content: space-between;
+    margin-top:136px;
+}
+.teamMember {
+    position: relative;
+    h4, h5 {
+        text-align: center;
+        margin:0;
+    }
+    h4 {
+        font-family: $bodyFont;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 16px;
+        padding-top:42px;
+    }
+    h5 {
+        font-family: $cursive;
+        font-style: italic;
+        font-size: 13px;
+        font-weight: 300;   
+    }
+
+}   
+.overlay {
+    position: absolute;
+    bottom:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.photo {
+    &:hover{
+        opacity:0.5;
+    }
+}
+.overlay ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding:0;
+    max-width:115px;
+    width:100%;
+    margin:0 auto;
+    li {
+        max-width:30px;
+        width:100%;    
+        text-align: center;
+        padding:0 10px;
+    }
+    a {
+        color:black;
+        font-size: 18px;
+    }
+}
+
+.testimonial {
+    background:rgba(51, 51, 51, 0.7);
+    font-family:$cursive;
+    color:white;
+    font-size: 18px;
+    font-style:italic;
+    font-weight: 300;
+    span {
+        float: right; 
+        padding-bottom: 95px;
+    }
+}
+.quotes {
+    max-width:75px;
+}
+.quoteBox {
+    border:5px solid white;
+    display: block;
+    max-width:100px;
+}
+
+.serviceBlurb {
+    display:flex;
+    margin-top: 136px;
+    margin-bottom: 136px;
+    p {
+        font-family: $cursive;
+        font-style: italic;
+        font-size: 18px;
+    }
+}
+
+
+// Footer
+.footerBody {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footerAbout {
+    display:flex;
+    flex-direction: column;
+}
