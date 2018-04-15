@@ -548,7 +548,7 @@ template {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
-    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 11px;
     padding: 0 25px; }
 
@@ -572,18 +572,22 @@ template {
     color: white;
     font-family: "Playfair Display", cursive;
     font-weight: 300;
-    font-style: italic; }
+    font-style: italic;
+    margin: 0px; }
 
 h2 {
   font-size: 36px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   line-height: 55px;
   text-transform: uppercase; }
 
+main {
+  background: #fcfcfc; }
+
 .threeBlocks {
   text-align: center;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding-top: 110px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
@@ -596,7 +600,9 @@ h2 {
     padding-top: 60px; }
 
 .team {
-  margin-bottom: 110px; }
+  padding-bottom: 110px;
+  background: #fcfcfc;
+  padding-top: 136px; }
 
 .teamBlurb {
   display: -webkit-box;
@@ -626,7 +632,7 @@ h2 {
     text-align: center;
     margin: 0; }
   .teamMember h4 {
-    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 16px;
@@ -691,16 +697,66 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 136px;
+  padding-top: 136px;
   margin-bottom: 136px; }
   .serviceBlurb p {
     font-family: "Playfair Display", cursive;
     font-style: italic;
     font-size: 18px; }
 
+.servicePhoto {
+  width: 50%; }
+  .servicePhoto img {
+    max-width: 570px;
+    width: 100%; }
+
+.serviceDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.serviceMenu {
+  width: 50%; }
+
+.services {
+  background: #fcfcfc;
+  padding-bottom: 134px; }
+  .services label {
+    border: 1px solid black;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    padding: 10px 0; }
+  .services input {
+    display: none; }
+
+#blurb {
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  padding: 0 20px;
+  line-height: 28px; }
+
+.hide {
+  display: none; }
+
+#show {
+  display: block; }
+
+footer {
+  background: #f4f4f4; }
+
+footer h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 22.4px;
+  text-transform: uppercase; }
+
 .footerBody {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 356px;
+  padding-top: 86px; }
 
 .footerAbout {
   display: -webkit-box;
@@ -709,7 +765,81 @@ h2 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  margin-right: 42px; }
+  .footerAbout p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 28.6px; }
+
+.readMore {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 30px;
+  margin-bottom: 200px; }
+  .readMore .fa-chevron-circle-right {
+    font-size: 12px;
+    margin-right: 14px; }
+  .readMore a {
+    text-decoration: none;
+    color: #985957;
+    font-size: 10px;
+    text-transform: uppercase; }
+
+.instagramGrid img {
+  max-width: 100px; }
+
+.instagram a {
+  font-family: "Playfair Display", cursive;
+  color: #985957;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 13px;
+  padding-top: 12px; }
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 356px; }
+
+input {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  padding: 15px 0 15px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e5e5e5; }
+
+textarea {
+  resize: none;
+  padding-top: 15px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e5e5; }
+
+button {
+  max-width: 170px;
+  width: 100%;
+  background: #985957;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 16px;
+  padding: 18px 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+  button:hover, button:focus {
+    background: #af7573; }
+
+.copyright {
+  font-size: 11px;
+  text-align: center;
+  border-top: 1px solid #f2f2f2; }
 
 .wrapper {
   max-width: 1170px;

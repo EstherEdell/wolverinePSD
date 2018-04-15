@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="./public/styles/style.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
 	 crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Raleway:300,400|Playfair+Display:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400|Playfair+Display:300,400" rel="stylesheet">
 	 <!-- Photo by Evan Clark on Unsplash -->
 </head>
 <body>
@@ -166,12 +166,32 @@
 						aliquam erat volutpat.“</p>
 					</div>
 				</div>
-				<div>
-					<div>
-						<img src="" alt="">
+				<div class="serviceDetails">
+					<div class="servicePhoto">
+						<img src="assests/helloquence-61189-unsplash.jpg" alt="">
 					</div>
-					<div>
-						<!-- drop down menus? -->
+					<div class="serviceMenu">
+						<div class="photographyInfo">
+							<input type="checkbox" name="photography" id="photography">
+							<label for="photography">Photography & Idea</label>
+							<p id="blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+							aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+							ex ea commodo consequat.</p>
+						</div>
+						<div class="creativityInfo">
+							<input type="checkbox" name="creativity" id="creativity">
+							<label for="creativity">Creativity & Branding</label>
+							<p id="blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+							aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+							ex ea commodo consequat.</p>
+						</div>
+						<div class="webInfo">
+							<input type="checkbox" name="web" id="web">
+							<label for="web">Web & Mobile Design</label>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+							aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+							ex ea commodo consequat.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -185,23 +205,31 @@
 						<img src="/assests/footerLogo.png" alt="">
 					</div>
 					<div>
-						<p>“Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-						aliquam erat volutpat.“</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+						</p>
+						<p>
+						aliquam erat volutpat. standard dummy text ever since. Lorem Ipsum has been the industry’s standard dummy text ever since.</p>
+					</div>
+					<div class="readMore">
+						<a href=""><i class="fas fa-chevron-circle-right"></i>Read More</a>
 					</div>
 			</section>
 	
 			<section class="instagram">
 				<h4>Instagram Follow</h4>
 				<div class="instagramGrid">
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
+						<img src="assests/cameras.jpg" alt="">
+						<img src="assests/greenCar.jpg" alt="">
+						<img src="assests/island.jpg" alt="">
+						<img src="assests/mountain.jpg" alt="">
+						<img src="assests/tableCone.jpg" alt="">
+						<img src="assests/tablet.jpg" alt="">
+						<img src="assests/taxi.jpg" alt="">
+						<img src="assests/tower.jpg" alt="">
+						<img src="assests/taxi.jpg" alt="">
+				</div>
+				<div>
+					<a href="#">View more photos</a>
 				</div>
 			</section>
 			<section class="contact">
@@ -209,14 +237,16 @@
 				<form>
 					<input type="text" name="" id="" placeholder="Angelina Jolie">
 					<input type="email" name="" id="" placeholder="Email">
-					<textarea name="" id="" cols="30" rows="10"></textarea>
+					<textarea name="" id="" cols="30" rows="5"></textarea>
 					<button>Read More</button>
 				</form>
 			</section>
 		</div>
-
+		<div class="copyright wrapper">
+			<p>&copy; 2015 WOLVERINE TEMPLATE. DESIGNED BY OSTHEMES</p>
+		</div>
 	</footer>
-
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
 	<script src="public/scripts/main.js"></script>
 </body>
 </html>

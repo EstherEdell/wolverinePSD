@@ -5,6 +5,11 @@ h2 {
         line-height: 55px;
         text-transform: uppercase;
     }
+
+main {
+    background:#fcfcfc;
+
+}
 .threeBlocks {
     // display:flex;
     text-align: center;
@@ -23,7 +28,9 @@ h2 {
     }
 }
 .team {
-    margin-bottom:110px;
+    padding-bottom:110px;
+    background: #fcfcfc;
+    padding-top: 136px;
 }
 .teamBlurb {
     display: flex;
@@ -118,7 +125,7 @@ h2 {
 
 .serviceBlurb {
     display:flex;
-    margin-top: 136px;
+    padding-top: 136px;
     margin-bottom: 136px;
     p {
         font-family: $cursive;
@@ -126,14 +133,144 @@ h2 {
         font-size: 18px;
     }
 }
+.servicePhoto {
+    width:50%;
+    img {
+        max-width: 570px;
+        width:100%;
+    }
+}
+
+.serviceDetails {
+    display:flex;
+}
+
+.serviceMenu {
+    width:50%;
+}
+
+.services {
+    background:#fcfcfc;
+    padding-bottom:134px;
+    label {
+        border:1px solid black;
+        font-family: $bodyFont;
+        text-transform: uppercase;
+        font-size: 14px;
+        display: block;
+        padding:10px 0;
+    }
+    input {
+        display: none;
+    }
+}
+#blurb  {
+        font-family:$otherFont;
+        font-size: 13px;
+        padding:0 20px;
+        line-height: 28px;
+    }
+.hide {
+    display:none;
+}
+#show {
+    display:block;
+}
 
 
 // Footer
+footer {
+    background: $grey;
+}
+footer h4 {
+    font-family: $bodyFont;
+    font-size: 14px;
+    line-height: 22.4px;
+    text-transform: uppercase;
+}
 .footerBody {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+    max-width: 356px;
+    padding-top:86px;
 }
 .footerAbout {
     display:flex;
     flex-direction: column;
+    margin-right: 42px;
+    p {
+       font-family: $bodyFont;
+       font-size: 13px;
+       line-height: 28.6px; 
+    }
+}
+.readMore {
+
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 30px;
+    margin-bottom: 200px;
+    .fa-chevron-circle-right {
+        font-size: 12px;
+        margin-right:14px;
+    }
+    a {
+        text-decoration: none;
+        color:$maroon;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+}
+.instagramGrid img {
+    max-width: 100px;
+}
+
+.instagram a {
+    font-family: $cursive;
+    color:$maroon;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 13px;
+    padding-top: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 356px;
+}
+input {
+    font-family: $otherFont;    
+    font-size: 12px;
+    padding:15px 0 15px 15px;
+    margin-bottom:15px;
+    border: 1px solid #e5e5e5;
+}
+textarea {
+    resize: none;
+    padding-top:15px;
+    padding-left: 15px;
+    margin-bottom:20px;
+    border: 1px solid #e5e5e5;
+}
+button {
+    max-width: 170px;
+    width: 100%;
+    background:$maroon;
+    border:0;
+    font-family: $bodyFont;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 16px;
+    padding:18px 0;
+    align-self: flex-end;
+    &:hover,
+    &:focus {
+        background:lighten($maroon, 10%);
+    }
+}
+.copyright {
+    font-size: 11px;
+    text-align: center;
+    border-top: 1px solid #f2f2f2;
 }
