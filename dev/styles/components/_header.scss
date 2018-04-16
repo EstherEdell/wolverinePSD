@@ -19,6 +19,10 @@
         font-family:$bodyFont;
         font-size: 11px;
         padding:0 25px;
+        &:hover {
+            color:$maroon;
+            text-decoration: underline;
+        }
     }
 }
 .hero {
